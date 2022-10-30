@@ -1,0 +1,35 @@
+.services{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.serice_img {
+  
+    width: 40%;
+    min-width: 300px;
+    flex-grow: 1;
+    flex-shrink: 2;
+    margin-top: 10px;
+}
+.service__title {
+
+    flex-grow: 3;
+    margin-top: 10px;
+
+}
+.service__content{
+    flex-grow:3;
+    margin-top: 10px;
+
+}
+
+@media screen and(max-width:900px) {
+    .serice_img {
+        width: 60%;
+    }
+    
+}
