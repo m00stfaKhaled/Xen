@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="css/seaction.css">
     <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
    
      <title></title>
@@ -36,10 +37,9 @@
 
         display: grid;
         grid-template-columns: repeat(2, minmax(110px, 1fr));
-        grid-template-rows: repeat(5, minmax(140px, 1fr));
-        grid-auto-rows: minmax(120px, 1fr);
+        grid-template-rows: repeat(6, minmax(120px, 1fr));
         padding: 2%;
-        gap: 1%;
+        gap: 10px;
     }
 
 
@@ -128,7 +128,7 @@
             padding: 0 !important;
 
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(5, minmax(100px, 1fr));
+            grid-template-rows: repeat(6, minmax(100px, 1fr));
             gap: 0;
         }
         title-heading {
@@ -213,7 +213,7 @@
     .nav-toggle {
         display: none;
     }
-
+/* nav  */
     @media only screen and (max-width:900px) {
 
         .navbar ul {
@@ -571,10 +571,38 @@
 
     </div>
 
-    <script src="index.js">
 
 
-    </script>
+
+<footer class="footer">
+
+            <div class="footer_logo">
+                            <img src="/images/logo.svg" alt="">
+            </div>
+            <div class="footer_seaction">
+                        <h4>About us </h4>
+                        <h4>Contact </h4>
+                        <h4>terms and condition</h4>
+            </div>
+            <div class="footer_seaction">
+                <h4>facebook </h4>
+                <h4>twiter </h4>
+                <h4>instgram</h4>
+    </div>
+    <!-- <div class="footer_seaction mail">
+            <h4 class="mail__title">let's</h4>
+            <label >
+                <input type="text" placeholder="EmailAddress">
+            <button>ok</button>
+            </label>
+        </div> -->
+        <div class="footer_seaction">
+            <h4>start project </h4>
+            <h4>+02 01100745846 </h4>
+            <h4>Lorem ipsum dolor sit.</h4>
+</div>        
+</footer>
+    <script src="index.js">  </script>
 </body>
 
 </html>
