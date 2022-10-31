@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
@@ -11,28 +10,27 @@
     <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="css/seaction.css">
     <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/order.css">
     <link rel="stylesheet" href="css/footer.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        </style> 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-   
      <title></title>
 </head>
 
 <style>
     * {
-
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-
     }
-
 
     body
     {
         background-color: #f7f3fe;
     }
   
-
     .whate-we-do {
 
         display: grid;
@@ -42,21 +40,20 @@
         gap: 10px;
     }
 
-
-
-
-
     .whate-we-do-content img {
-        width: 80% !important;
+        width: 50% ;
         text-align: center;
         margin: auto;
-
+    }
+    .whate-we-do-content  lottie-player{
+        width: 40% ;
+        text-align: center;
+        margin: auto;
     }
 
 
 
     .whate-we-do-content {
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -65,7 +62,6 @@
 
 
     .number {
-
         border-radius: 50%;
         width: 36px;
         height: 36px;
@@ -75,11 +71,9 @@
         font-size: 19px;
         text-align: center;
         margin-right: 10px;
-
     }
 
     .number-text {
-
         text-align: center;
         margin: auto;
         position: absolute;
@@ -99,13 +93,14 @@
     }
 
     .whate-we-are__content {
-
-        padding: 1%;
         line-height: 30px;
         letter-spacing: 2px;
-
-
+        width: 70%;
+        text-align: center;
+        align-self: flex-start;
         margin-top: 10px;
+        word-break: break-all;
+
     }
 
     .title-heading {
@@ -115,21 +110,18 @@
 
     }
 
-    /* .whate-we-do-content1 {
-
-        display: flex;
-        align-items: center;
-    } */
-
-
     @media only screen and (max-width: 900px) {
 
         .whate-we-do {
             padding: 0 !important;
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 100px;
         }
-
+        .whate-we-do-content  {
+            margin-top: 50px;
+          
+        }
         .whate-we-do-content1 {
             order: 1;
         }
@@ -169,24 +161,31 @@
         .whate-we-do-content12{
             order:11;
         }
-        
         title-heading {
 
             font-size: 30px;
         }
         .whate-we-do-content {
-
-
             align-items: center;
             align-content: center;
-
         }
+         .whate-we-are__content {
+
+            width: 100%;
+            padding: 30px;
+            display: flex;
+           
+         }
 
         .whate-we-do-content img {
             align-self: center;
             text-align: center;
             padding: 0;
-            width: 70% !important;
+            width: 80% !important;
+        }
+        .whate-we-do-content  lottie-player {
+
+            width: 80% !important;
         }
 
         .whate-we-do-content {
@@ -207,7 +206,7 @@
 
 
     .navbar ul {
-
+   
         width: 100%;
         background-color: transparent;
         z-index: 100;
@@ -219,6 +218,7 @@
         box-shadow: 0px 5px 7px -6px rgba(0,0,0,0.75);
 
         justify-content: space-evenly;
+     
 
     }
 
@@ -251,6 +251,10 @@
 
     .nav-toggle {
         display: none;
+        
+    }
+    .nav-toggle i {
+        transition: all 10s ease-out;
     }
 /* nav  */
     @media only screen and (max-width:900px) {
@@ -261,15 +265,15 @@
             justify-content: stretch;
             background-color: #fff;
             color: #000;
+            transition: all 1s ease-out;
         }
 
         .nav-toggle {
-
             display: block;
             color: #fff;
             color: black;
             font-size: 30px;
-                
+            transition: all 1s ease-out;
             user-select: none;
         }
 
@@ -277,6 +281,9 @@
             width: 100%;
             text-align: center;
             display: none;
+            transition: all 1s ease-out;
+            /* animation: fadeIn .5s ease-in-out; */
+     
         }
 
         .navbar ul li {
@@ -293,13 +300,38 @@
 
         }
 
-
-
     }
 
     .active {
-        display: block;
+        display: block;  
+  animation: fadeIn .5s ease-in-out;
+    
+       
+      
     }
+
+    @keyframes fadeIn {
+     0% {
+          opacity: 0;
+          transform: scale(0)
+     }
+
+     100% {
+          opacity: 1;
+          transform: scale(1)
+     }
+}
+
+
+.whate-we-do__praghraph {
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+  
+}
 </style>
 
 <body>
@@ -308,14 +340,13 @@
             <li id=nav-toggle class="nav-toggle">
                 <i class="fa-solid fa-bars"></i>
             </li>
-
             <li class="nav-links">
-                <a href="#">
+                <a href="#services">
                     services
                 </a>
             </li>
             <li class="nav-links">
-                <a href="#">
+                <a href="#about">
                     about
                 </a>
             </li>
@@ -325,7 +356,7 @@
             </li>
 
             <li class="nav-links">
-                <a href="#">
+                <a href="#whate-we-do">
                     whate we do
                 </a>
             </li>
@@ -337,8 +368,16 @@
             <h2 class="header-title"> LMITI  <img src="/images/infinity.svg" alt=""> SERVICES</h2>
         </div>
     </header>
-
-    <section class="services">
+    <div class="main-order-setion">
+        <div class="main-order">
+            <h2>
+               <p> contact us now and get the</p> <span  class="span-text" >40%</span> offer
+                
+            </h2>
+            <button class="main-order__btn">ORDER</button>
+        </div>
+    </div>
+    <section id="services" class="services">
         <div class="service__title">
             <h2>What Do We Specialize</h2>
            
@@ -349,13 +388,13 @@
         speed="1"    loop  autoplay></lottie-player>
 
         <div class="service__content">
-            <h3>SERVICES</h3>
+            <h3 >SERVICES</h3>
             <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quis ullam 
                 recusandae facilis quaerat earum atque,</P>
         </div>
     </section>
 
-    <div class="seactions">
+    <div id="about" class="seactions">
         <div class="seaction1">
             <div class="seaction__number">
                         <p class="seaction_number_content">
@@ -455,7 +494,20 @@
         
     </div>
 
-    <div class="whate-we-do">
+    <section class="order">
+
+        <div class="order_title">
+            <h3 class="order_title_heading"> Lorem, ipsum dolor.</h3>
+            <p class="order_title_content">  Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+       
+        <button class="order__btn">ORDER NOW !</button>
+    </section>
+   <div class="seaction_whate">
+    <p class="whate-we-do__praghraph">
+        whate we do...
+    </p>
+    <div id="whate-we-do" class="whate-we-do">
         <div class="whate-we-do-content whate-we-do-content1">
 
             <img src="/images/1.svg" alt="">
@@ -468,8 +520,6 @@
                     </div>
                 </div>
                 <h2 class="title-heading"> Branding </h2>
-
-
             </div>
 
             <p class="whate-we-are__content">
@@ -610,37 +660,46 @@
 
     </div>
 
+   </div>
 
+    <section class="order">
 
+        <div class="order_title">
+            <h3 class="order_title_heading"> Lorem, ipsum dolor.</h3>
+            <p class="order_title_content">  Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+       
+        <button class="order__btn">ORDER NOW !</button>
+    </section>
 
-<footer class="footer">
+        <footer class="footer">
 
-            <div class="footer_logo">
-                            <img src="/images/logo.svg" alt="">
+                    <div class="footer_logo">
+                                    <img src="/images/logo.svg" alt="">
+                    </div>
+                    <div class="footer_seaction">
+                                <h4>About us </h4>
+                                <h4>Contact </h4>
+                                <h4>terms and condition</h4>
+                    </div>
+                    <div class="footer_seaction">
+                        <h4>facebook </h4>
+                        <h4>twiter </h4>
+                        <h4>instgram</h4>
             </div>
-            <div class="footer_seaction">
-                        <h4>About us </h4>
-                        <h4>Contact </h4>
-                        <h4>terms and condition</h4>
-            </div>
-            <div class="footer_seaction">
-                <h4>facebook </h4>
-                <h4>twiter </h4>
-                <h4>instgram</h4>
-    </div>
-    <!-- <div class="footer_seaction mail">
-            <h4 class="mail__title">let's</h4>
-            <label >
-                <input type="text" placeholder="EmailAddress">
-            <button>ok</button>
-            </label>
-        </div> -->
-        <div class="footer_seaction">
-            <h4>start project </h4>
-            <h4>+02 01100745846 </h4>
-            <h4>Lorem ipsum dolor sit.</h4>
-</div>        
-</footer>
+            <!-- <div class="footer_seaction mail">
+                    <h4 class="mail__title">let's</h4>
+                    <label >
+                        <input type="text" placeholder="EmailAddress">
+                    <button>ok</button>
+                    </label>
+                </div> -->
+                <div class="footer_seaction">
+                    <h4>start project </h4>
+                    <h4>+02 01100745846 </h4>
+                    <h4>Lorem ipsum dolor sit.</h4>
+        </div>        
+        </footer>
     <script src="index.js">  </script>
 </body>
 

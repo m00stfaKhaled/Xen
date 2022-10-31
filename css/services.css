@@ -9,7 +9,7 @@
 
 .serice_img {
   
-    width: 40%;
+    width: 39%;
     min-width: 300px;
     flex-grow: 1;
     flex-shrink: 2;
@@ -21,10 +21,25 @@
     margin-top: 10px;
 
 }
+.service__title  h2 {
+
+    font-size: 3.1rem;
+
+}
 .service__content{
     flex-grow:3;
     margin-top: 10px;
+    width: 40%;
+  
 
+
+}
+.service__content p {
+    font-size: 20px;
+}
+.service__content h3 {
+font-size: 2.1rem ;
+padding-bottom: 40px;
 }
 
 @media screen and(max-width:900px) {
