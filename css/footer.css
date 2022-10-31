@@ -4,8 +4,6 @@
     display: flex;
     flex-direction: row ;
     align-items: center;
- 
-
 }
 
 .footer_logo img {
@@ -55,9 +53,7 @@ label{
 ::placeholder {
     color: #fff;
 }
-.footer_seaction button {
-
-  
+.footer_seaction button {  
     color: #470341;
     background-color: #fff;
     letter-spacing: 1.2px;
@@ -72,14 +68,32 @@ label{
     .footer{
 
         flex-direction: column;
-        justify-content: center;
-
-        align-items: center;
-        text-align: center;
+  
+      ;
     }
+    .footer_logo img {
+
+        width: 100px;
+        height: 100px;
+        
+    
+    }
+    .footer_logo {
+        align-self: center;
+        justify-content: center;
+    }
+    
     .footer_seaction {
 
-        flex-grow: 2;
+        
         margin-bottom: 10px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        word-break: break-all;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }

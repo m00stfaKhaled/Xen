@@ -9,8 +9,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 24%;
+    border-bottom-right-radius: 24%;
     text-align: center;
 }
 
@@ -18,8 +18,8 @@
     .order {
         width: 70%;
         height: 30vh;
-        border-bottom-left-radius: 22%;
-        border-bottom-right-radius: 22%;
+        border-bottom-left-radius: 40%;
+        border-bottom-right-radius: 40%;
     }
 }
 
@@ -38,6 +38,7 @@
     color: #fff;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
+    overflow: hidden;
 }
 .order_title{
 flex-grow: 6;
